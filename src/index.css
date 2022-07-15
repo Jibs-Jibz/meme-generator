@@ -1,13 +1,89 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --ff-primary: "Inter", sans-serif;
+  --ff-secondary: "Karla", sans-serif;
 }
+body{
+  background-color: antiquewhite;
+}
+nav {
+  display: flex;
+  padding: 1em 2em 1em 1em;
+  max-width: 550px;
+  height: 65px;
+  background-image: linear-gradient(to right, #672280, #a626d3);
+  gap: 0.5em;
+  margin: auto;
+}
+nav > img {
+  height: 100%;
+  /* width: auto; */
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+nav > h3 {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  font-size: 1.3em;
+  vertical-align: text-bottom;
+  color: #fff;
+  font-family: var(--ff-secondary);
+}
+nav > p {
+  color: #fff;
+  margin-left: auto;
+  font-size: 0.75em;
+  align-self: center;
+  font-family: var(--ff-primary);
+  font-weight: 300;
+}
+section {
+  margin: 2rem auto;
+  width: 550px;
+  padding: 0em 2em ;
+  /* background-color: #ccc; */
+}
+.input {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 50%;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+.text-input {
+  width: 50%;
+  border-radius: 5px;
+  border-color: #D5D4D8 ;
+  border: 1px solid #ccc;
+  /* padding: 16px 10px; */
+  text-indent: 5px;
+  font-family: var(--ff-primary);
+}
+.buttonf {
+  width: 100%;
+  background-image: linear-gradient(to right, #711f8d, #a818da);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: .8em 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--ff-secondary);
+}
+.meme-image{
+  width: 100%;
+  margin: 1.5em 0 ;
+  border-radius: 5px;
+}             
