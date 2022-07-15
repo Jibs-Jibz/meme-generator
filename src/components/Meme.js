@@ -33,7 +33,7 @@ export default function Meme() {
                 {/* <a href="#" class="buttonf">Get a new meme image🖼️</a> */}
                 <button class="buttonf" onClick={getmemeImage} >Get a new meme image🖼️</button>
             </div>
-            <img src={memeImage.randomImage} className="meme-image" />
+            <img src={memeImage.randomImage} className="meme-image"/>
         </section>
 
     )
